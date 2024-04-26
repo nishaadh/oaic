@@ -6,10 +6,10 @@
 	path = ric-plt-e2
 	url = https://github.com/openaicellular/ric-plt-e2.git
 	branch = e-release
-[submodule "srsRAN-e2"]
-	path = srsRAN-e2
-	url = https://github.com/openaicellular/srsRAN-e2.git
-	branch = e2like_support
+#[submodule "srsRAN-e2"]
+#	path = srsRAN-e2
+#	url = https://github.com/openaicellular/srsRAN-e2.git
+#	branch = e2like_support
 [submodule "ric-scp-kpimon"]
 	path = ric-scp-kpimon
 	url = https://github.com/openaicellular/ric-scp-kpimon.git
