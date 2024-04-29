@@ -115,6 +115,21 @@ Paste the following in the ``drl-ss-onboard.url`` file. Substitue the ``<machine
 .. code-block:: bash
 
     {"config-file.json_url":"http://<machine_ip_addr>:5010/config_files/config-file.json"}
+
+Make sure you have the ue information added to the srslte config files
+
+.. code-block:: bash
+
+    sudo -i
+    vim .config/srslte/user_db.csv
+
+Paste this into the user_db.csv file
+
+.. code-block:: bash
+
+ue2,xor,001010123456780,00112233445566778899aabbccddeeff,opc,63bfa50ee6523365ff14c1f45f88737d,8000,000000001590,7,dynamic
+    ue3,xor,001010123456781,00112233445566778899aabbccddeeff,opc,63bfa50ee6523365ff14c1f45f88737d,8002,000000001488,7,dynamic
+    ue1,xor,001010123456789,00112233445566778899aabbccddeeff,opc,63bfa50ee6523365ff14c1f45f88737d,9001,000000001656,7,dynamic
     
 
 Deploying xApp using a script with ZMQ
